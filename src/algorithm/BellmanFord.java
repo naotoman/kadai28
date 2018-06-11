@@ -8,10 +8,12 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-import main.Solver28;
 
-
-
+/**
+ * <p>{@code Solver28}インターフェースの実装の一つです。
+ * 問題を最大重み2部マッチング→最小費用流問題へと帰着させて、
+ * 最短路をベルマンフォード法で求めるプライマルデュアル法により解を求めます。
+ */
 public class BellmanFord implements Solver28 {
 
 	private static final int INF = 1<<30;

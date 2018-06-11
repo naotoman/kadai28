@@ -9,8 +9,13 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-import main.Solver28;
 
+/**
+ * <p>{@code Solver28}インターフェースの実装の一つです。
+ * 問題を最大重み2部マッチング→最小費用流問題へと帰着させて、
+ * 最短路をダイクストラ法で求めるプライマルデュアル法により解を求めます。
+ * <p>ベルマンフォード法より高速なダイクストラ法を用いるために、ポテンシャルという概念を導入しています。
+ */
 public class Dijkstra implements Solver28 {
 
 	private static final int INF = 1<<30;

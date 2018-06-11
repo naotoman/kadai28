@@ -5,8 +5,11 @@ import java.io.FileNotFoundException;
 import java.util.BitSet;
 import java.util.Scanner;
 
-import main.Solver28;
 
+/**
+ * <p>{@code Solver28}インターフェースの実装の一つで、可能な割り当てを全通り試すアルゴリズムです。
+ * 計算量はO(n!)です。
+ */
 public class BruteForce28 implements Solver28 {
 
 	private int n;
